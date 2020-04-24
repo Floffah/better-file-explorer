@@ -19,10 +19,13 @@
   "homepage": "https://github.com/Floffah/better-file-explorer#readme",
   "devDependencies": {
     "electron": "^8.2.3",
-    "electron-builder": "^22.5.1"
+    "electron-builder": "^22.5.1",
+    "electron-rebuild": "^1.10.1"
   },
   "dependencies": {
     "async": "^3.2.0",
+    "electron-vibrancy": "file:../../library/electron-vibrancy",
+    "electron-vibrancy-fixforlatest": "^0.1.4",
     "graceful-fs": "^4.2.3"
   }
 }

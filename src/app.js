@@ -3,29 +3,21 @@ let {app, BrowserWindow} = require('electron'),
     path = require('path');
 
 app.on('ready', () => {
-    if(fs.existsSync(path.resolve(app.getPath("userData"), 'data', 'settings.json'))) {
-        explorer("%quick%");
-    } else {
-        setup();
-    }
+    explorer("%quick%");
 });
 
-function explorer(path) {
+function explorer(pth) {
 
-}
-
-function setup() {
+    let evib = require('electron-vibrancy-fixforlatest');
     let setup = new BrowserWindow({
         frame: false,
         show: false,
-        minWidth: 600,
+        minWidth: 800,
         minHeight: 600,
-        resizable: false,
-        minimizable: false,
+        width: 800,
+        height: 600,
         fullscreenable: false,
-        maximizable: false,
         transparent: true,
-        vibrancy: "light",
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -33,9 +25,10 @@ function setup() {
         }
     });
 
-    setup.loadFile(path.resolve(__dirname, '../assets/views', 'setup.html'));
+    setup.loadFile(path.resolve(__dirname, '../assets/views', 'ui.html'));
 
     setup.on('ready-to-show', () => {
+        evib.SetVibrancy(setup, 0);
         setup.show();
     });
 }

@@ -1,0 +1,48 @@
+.content
+  width: calc(100% - 200px)
+  top: 30px
+  height: calc(100% - 30px)
+  background-color: $oc-gray-0
+  border-bottom-right-radius: 5px
+  border-top-left-radius: 0
+  border-bottom-left-radius: 0
+  position: absolute
+  left: 200px
+  -webkit-app-region: none
+
+.sidebar
+  width: 200px
+  position: absolute
+  left: 0px
+  top: 0px
+
+.actionbar
+  position: absolute
+  right: 0
+  height: 30px
+  top: 0
+  -webkit-app-region: none
+  user-select: none
+  i
+    display: inline-block
+    font-size: 15px
+    position: relative
+    margin: 0
+    transition: 0.25s
+    cursor: pointer
+    color: $oc-gray-9
+    padding:
+      top: 7.5px
+      bottom: 7.5px
+      right: 10px
+      left: 10px
+    &:hover
+      color: $oc-gray-0
+    &.minimize
+      margin-top: 0
+      top: -4.5px
+    &.close
+      border-top-right-radius: 5px
+      &:hover
+        background-color: $oc-red-6
+

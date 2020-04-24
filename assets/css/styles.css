@@ -7,21 +7,69 @@ body, html {
   height: 100%;
 }
 
-.bgblur {
+.bg {
+  opacity: 0.25;
+  background-color: #f8f9fa;
   width: 100%;
   height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  filter: blur(100px);
+  position: absolute;
+  border-radius: 5px;
+  -webkit-app-region: drag;
 }
 
-.content.setup {
-  width: 100%;
-  height: 100%;
+.content {
+  width: calc(100% - 200px);
+  top: 30px;
+  height: calc(100% - 30px);
   background-color: #f8f9fa;
-  border-radius: 10px;
-  opacity: 0.75;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  left: 200px;
+  -webkit-app-region: none;
+}
+
+.sidebar {
+  width: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.actionbar {
+  position: absolute;
+  right: 0;
+  height: 30px;
+  top: 0;
+  -webkit-app-region: none;
+  user-select: none;
+}
+.actionbar i {
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+  margin: 0;
+  transition: 0.25s;
+  cursor: pointer;
+  color: #212529;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.actionbar i:hover {
+  color: #f8f9fa;
+}
+.actionbar i.minimize {
+  margin-top: 0;
+  top: -4.5px;
+}
+.actionbar i.close {
+  border-top-right-radius: 5px;
+}
+.actionbar i.close:hover {
+  background-color: #fa5252;
 }
 
 /*# sourceMappingURL=styles.css.map */
