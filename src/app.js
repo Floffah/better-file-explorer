@@ -20,9 +20,9 @@ function explorer(pth) {
         transparent: true,
         webPreferences: {
             nodeIntegration: true,
-            contextIsolation: false,
-            experimentalFeatures: true
-        }
+            contextIsolation: false
+        },
+        icon: 'assets/img/icon.ico'
     });
 
     setup.loadFile(path.resolve(__dirname, '../assets/views', 'ui.html'));
