@@ -1,0 +1,27 @@
+body, html {
+  margin: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bgblur {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  filter: blur(100px);
+}
+
+.content.setup {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  opacity: 0.75;
+}
+
+/*# sourceMappingURL=styles.css.map */

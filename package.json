@@ -1,0 +1,28 @@
+{
+  "name": "better-file-explorer",
+  "version": "0.0.1",
+  "description": "A better file explorer inspired by Avdan's \"Windows 20\"",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "npx electron .",
+    "styles": "npx sass --watch assets/sass/styles.sass:assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Floffah/better-file-explorer.git"
+  },
+  "author": "Floffah",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Floffah/better-file-explorer/issues"
+  },
+  "homepage": "https://github.com/Floffah/better-file-explorer#readme",
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "electron-builder": "^22.5.1"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "graceful-fs": "^4.2.3"
+  }
+}
